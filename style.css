@@ -1,0 +1,162 @@
+h2 {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    color: azure;
+    font-size: 3vw;
+}
+
+span {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    color: azure;
+    font-size: 1.5vw;
+}
+
+#boardSizeForm {
+    width: 10vw;
+    height: 5vw;
+    position: relative;
+    right: 20%;
+    left: 80%;
+    top: 5%;
+    margin-top: -3.5vw;
+}
+
+input {
+    background: linear-gradient(to left, #757f9a, #d7dde8);
+    width: 10vw;
+    height: 5vw;
+    font-size: 2vw;
+}
+
+input:hover {
+    background: #414345;
+    transition: all 0.5s ease-in-out;
+}
+
+body {
+    background: linear-gradient(to left, #232526, #414345);
+    min-width: 1024px;
+    min-height: 768px;
+    max-width: 1920px;
+    min-height: 1080px;
+}
+
+table#board {
+    width: 35vw;
+    height: 35vw;
+    position: relative;
+    background: linear-gradient(to left, #757f9a, #d7dde8);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+}
+
+table#board tr td {
+    position: relative;
+    border: 2px solid #232526;
+}
+
+.piece {
+    border-radius: 50%;
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+table#namesTable {
+    width: 35vw;
+    height: 5vh;
+    position: relative;
+    border-collapse: collapse;
+    border: 2px solid white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vw;
+    background: linear-gradient(to left, #232526, #414345);
+}
+
+table#statsTable {
+    margin-top: 0.5vw;
+    width: 28vw;
+    height: 5vw;
+    position: absolute;
+    border-collapse: collapse;
+    border: 2px solid white;
+    text-align: center;
+    background: linear-gradient(to left, #232526, #414345);
+    position: absolute;
+    left: 2%;
+    top: 11%;
+}
+
+#winner {
+    color: red;
+    font-size: 3vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#namesTable tr td.color {
+    text-align: center;
+}
+
+#statsTable tr td.color {
+    text-align: center;
+}
+
+#namesTable tr td.numPiece {
+    text-align: center;
+}
+
+.color.activePlayer {
+    color: green;
+}
+
+button {
+    text-align: center;
+    font-size: 3vw;
+    font-family: 'Orbitron', sans-serif;
+    color: #232526;
+    background: linear-gradient(to left, #757f9a, #d7dde8);
+    border: 2px #232526;
+    font-size: larger;
+    margin-top: 0.5vw;
+    width: 10vw;
+    height: 5vw;
+    position: absolute;
+    right: 20%;
+    left: 80%;
+}
+
+button:hover {
+    background: #414345;
+    transition: all 0.5s ease-in-out;
+}
+
+table#board tr td.square.valid {
+    background: greenyellow;
+}
+
+.piece.black {
+    background-color: black;
+}
+
+.piece.white {
+    background-color: white;
+}
+
+.piece:hover {
+    background-color: rgb(156, 0, 0);
+    transition: all 0.1s ease-in-out;
+}
+
+.piece.empty {
+    visibility: hidden;
+}
